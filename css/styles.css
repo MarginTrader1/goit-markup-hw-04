@@ -522,6 +522,9 @@ header {
 .porfolio-button:focus {
     background-color: var(--link-color);
     color: var(--main-background-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+    0px 2px 1px rgba(0, 0, 0, 0.08), 
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 } 
 
 /* примеры работ в портфолио */
@@ -537,12 +540,16 @@ header {
 
 .work-card {
     width: 360px;  
+    border: 0.5px solid #F4F4FD;
+}
+
+.work-card:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .work-card-signature {
     padding: 32px 16px;
- 
-    border: 0.5px solid rgba(244, 244, 253, 1); 
 }
 
 .work-card-title {
