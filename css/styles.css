@@ -343,7 +343,6 @@ header {
     justify-content: space-between;
     padding: 4px 0px;
     margin: 0;
-    
 }
 
 .team-card-image {
@@ -352,7 +351,7 @@ header {
     background-color: var(--link-color);
     border-radius: 50%;
     padding: 12px;
-
+    cursor: pointer;
 }
 
 /* customers section styles */
