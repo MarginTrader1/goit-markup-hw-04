@@ -186,6 +186,23 @@ header {
     width: 264px;
 }
 
+.features-image {
+    padding: 24px 100px;
+    margin-bottom: 8px;
+    
+    background-color: #F4F4FD;
+    border-radius: 5px;
+}
+
+.features-image:hover,
+.features-image:focus {
+    outline: 1px solid black;
+}
+
+.features-icon {
+    display: block;     
+}
+
 .features-title {
     margin: 0;
     margin-bottom: 8px;    
@@ -288,6 +305,9 @@ header {
     background-color: var(--main-background-color);
     width: 265px;
     text-align: center;
+
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-card > img {
@@ -296,6 +316,7 @@ header {
 
 .team-card p {
     margin: 0;
+    margin-bottom: 8px;
     padding: 0;
     
     line-height: 1.5;
@@ -306,6 +327,68 @@ header {
     padding: 32px 16px;
 }
 
+.team-card-social-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0px;
+    margin: 0;
+    
+}
+
+.team-card-image {
+    width: 40px;
+    height: 40px;
+    background-color: var(--link-color);
+    border-radius: 50%;
+    padding: 12px;
+
+}
+
+/* customers section styles */
+
+.customers {
+    margin: 0;
+    padding: 156px 120px;
+}
+
+.customers-title {
+    margin: 0;
+    margin-bottom: 72px;
+    
+    color: var(--main-title-color);
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.customers-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.customers-image {
+    width: 168px;
+    height: 88px;
+    margin: 0;
+    padding: 16px 32px;
+
+    outline: 1px solid #8E8F99;
+    border-radius: 5px;
+}
+
+.customers-list > li:not(:first-child) {
+    margin-left: 24px;
+}
+
+.customers-icon {
+    width: 104px;
+    height: 56px;
+}
+
 /* footer styles */
 
 .invitation {
@@ -314,6 +397,10 @@ header {
     
     background-color: var(--main-title-color);
     color: #E7E9FC;
+}
+
+.invitation > .container {
+    display: flex;
 }
 
 .invitation-logo-name {
@@ -328,10 +415,52 @@ header {
     text-transform: uppercase;
 }
 
-.invitation p {
+.footer-social-list-links {
+    margin-left: 120px;
+}
+
+.footer-social-list-links > p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16px;
+
+    color: var(--main-background-color);
+
+    font-size: 16px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+}
+
+.footer-social-links {
+    display: flex;
+    padding: 0;
+
+}
+
+.footer-logo p {
     width: 264px;
     margin: 0;
     margin-top: 16px;
+}
+
+.footer-social-links-image {
+    width: 40px;
+    height: 40px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 16px;
+}
+
+.footer-social-links-image:hover {
+    background-color: #31D0AA;
+    cursor: pointer;
+}
+
+.footer-social-links-icon {
+
 }
 
 /* porfolio styles */
