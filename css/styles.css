@@ -217,11 +217,6 @@ header {
     border-radius: 5px;
 }
 
-.features-image:hover,
-.features-image:focus {
-    outline: 1px solid black;
-}
-
 .features-icon {
     display: block;     
 }
@@ -569,6 +564,7 @@ header {
 }
 
 .work-card-signature {
+    width: 360px;
     padding: 32px 16px;
 }
 
