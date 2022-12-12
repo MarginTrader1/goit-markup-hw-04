@@ -363,11 +363,17 @@ header {
     cursor: pointer;
 }
 
+.team-card-image:hover,
+.team-card-image:focus {
+    background-color: #31D0AA;
+    cursor: pointer;
+}
+
 /* customers section styles */
 
 .customers {
     margin: 0;
-    padding: 156px 120px;
+    padding: 120px 0;
 }
 
 .customers-title {
@@ -482,7 +488,8 @@ header {
     margin-right: 16px;
 }
 
-.footer-social-links-image:hover {
+.footer-social-links-image:hover,
+.footer-social-links-image:focus {
     background-color: #31D0AA;
     cursor: pointer;
 }
