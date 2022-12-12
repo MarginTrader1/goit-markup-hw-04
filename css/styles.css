@@ -345,6 +345,8 @@ header {
     padding: 32px 16px;
 }
 
+/* Ссылки на социальные сети */
+
 .team-card-social-links {
     display: flex;
     justify-content: space-between;
@@ -459,6 +461,7 @@ header {
 .footer-social-links {
     display: flex;
     padding: 0;
+    margin: 0;
 
 }
 
@@ -485,7 +488,7 @@ header {
 }
 
 .footer-social-links-icon {
-
+    margin: 0;
 }
 
 /* porfolio styles */
