@@ -206,13 +206,22 @@ header {
 }
 
 .features-list-item {
-    width: 264px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    
 }
 
 .features-image {
-    padding: 24px 100px;
-    margin-bottom: 8px;
-    
+    width: 264px;
+    height: 112px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
     background-color: #F4F4FD;
     border-radius: 5px;
 }
@@ -222,8 +231,7 @@ header {
 }
 
 .features-title {
-    margin: 0;
-    margin-bottom: 8px;    
+    margin: 0;    
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
@@ -349,22 +357,30 @@ header {
 
 .team-card-social-links {
     display: flex;
-    justify-content: space-between;
-    padding: 4px 0px;
     margin: 0;
+    padding: 4px 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
 }
 
-.team-card-image {
+.team-card-link {
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-color: var(--link-color);
     width: 40px;
     height: 40px;
-    background-color: var(--link-color);
+    
     border-radius: 50%;
     padding: 12px;
     cursor: pointer;
 }
 
-.team-card-image:hover,
-.team-card-image:focus {
+.team-card-link:hover,
+.team-card-link:focus {
     background-color: #31D0AA;
     cursor: pointer;
 }
@@ -393,33 +409,34 @@ header {
     display: flex;
     padding: 0;
     margin: 0;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
 }
 
 .customers-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     width: 168px;
     height: 88px;
     margin: 0;
-    padding: 16px 32px;
-
+    
     outline: 1px solid #8E8F99;
+    color: #8E8F99;
     border-radius: 4px;
     cursor: pointer;
 }
 
-.customers-image:hover {
-    outline: 1px solid var(--link-color);
-}
-
-.customers-list > li:not(:first-child) {
-    margin-left: 24px;
-}
-
 .customers-icon {
-    fill: #8E8F99;
+    fill: currentColor;
 }
 
-.customers-icon:hover {
-    fill: var(--link-color);
+.customers-image:hover,
+.customers-image:focus {
+    outline: 1px solid var(--link-color);
+    color: var(--link-color);
 }
 
 /* footer styles */
@@ -460,24 +477,31 @@ header {
     color: var(--main-background-color);
 
     font-size: 16px;
-    line-height: 1.15;
+    font-weight: 600;
+    line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
 .footer-social-links {
     display: flex;
-    padding: 0;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+    
+    padding: 0px;
     margin: 0;
-
 }
 
 .footer-logo p {
     width: 264px;
     margin: 0;
     margin-top: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .footer-social-links-image {
+    display: block;
     width: 40px;
     height: 40px;
 
@@ -485,7 +509,6 @@ header {
 
     border-radius: 50%;
     padding: 8px;
-    margin-right: 16px;
 }
 
 .footer-social-links-image:hover,
@@ -570,7 +593,7 @@ header {
 
 .work-card:hover {
     background: #FFFFFF;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.3);
 }
 
 .work-card-signature {
