@@ -33,6 +33,22 @@ header {
     width: 1158px;
 }
 
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    margin: 0;
+    padding: 0;
+
+    cursor: pointer;
+}
+
 .title {
     font-weight: 600
     /* пытался сгруппировать некторые стили, 
@@ -165,7 +181,6 @@ header {
 
 .button:hover,
 .button:focus {
-    
     box-shadow: 0px 1px 6px 
     rgba(46, 47, 66, 0.08), 
     0px 1px 1px rgba(46, 47, 66, 0.16), 
@@ -354,29 +369,15 @@ header {
     justify-content: center;
     align-items: center;
     gap: 24px;
-
 }
 
 .team-card-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin: 0;
-    padding: 0;
-
     background-color: var(--link-color);
-    width: 40px;
-    height: 40px;
-    
-    border-radius: 50%;
-    cursor: pointer;
 }
 
-.team-card-link:hover,
-.team-card-link:focus {
+.team-card-link.social-link:hover,
+.team-card-link.social-link:focus {
     background-color: #31D0AA;
-    cursor: pointer;
 }
 
 /* customers section styles */
@@ -494,20 +495,12 @@ header {
     letter-spacing: 0.02em;
 }
 
-.footer-social-links-image {
-    display: flex;
-    width: 40px;
-    height: 40px;
-
+.footer-link {
     background-color: rgba(255, 255, 255, 0.1);
-
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
 }
 
-.footer-social-links-image:hover,
-.footer-social-links-image:focus {
+.social-link.footer-link:hover,
+.social-link.footer-link:focus {
     background-color: #31D0AA;
     cursor: pointer;
 }
