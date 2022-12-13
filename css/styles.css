@@ -502,7 +502,6 @@ header {
 .social-link.footer-link:hover,
 .social-link.footer-link:focus {
     background-color: #31D0AA;
-    cursor: pointer;
 }
 
 .footer-social-links-icon {
