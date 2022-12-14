@@ -1,13 +1,14 @@
-/* root styles */
+/* ============================== root styles ============================== */
 
 :root {
     --main-text-color: #434455;
     --main-title-color:  #2E2F42;
     --link-color: #4D5AE5;
+    --link-color-hover: #31D0AA;
     --main-background-color: #FFFFFF;
     }
  
-/* body styles */
+/* ============================== body styles ============================== */
 
 body {
     background-color: var(--main-background-color);
@@ -48,13 +49,7 @@ header {
     cursor: pointer;
 }
 
-.title {
-    font-weight: 600
-    /* пытался сгруппировать некторые стили, 
-    над этим нужно еще поработать, но уже нет времени)))  */
-}
-
-/* logo styles */
+/* ============================== logo styles ============================== */
 
 .logo-flex {
     display: flex;
@@ -78,7 +73,7 @@ header {
     color: var(--link-color);
 }
 
-/* menu styles */
+/* ============================== menu навигации ============================== */
 
 .menu {
     margin-left: 77px;
@@ -97,6 +92,7 @@ header {
 .link {
     color: var(--main-title-color);
     text-decoration: none; 
+    font-weight: 600;
 }
 
 .link:hover, 
@@ -124,7 +120,7 @@ header {
     color: var(--link-color);
 }
 
-/* hero styles */
+/* ============================== главная картинка styles ============================== */
 
 .promotion {
     display: block;
@@ -169,6 +165,7 @@ header {
     font-family: inherit;
     color: var(--main-background-color);
     font-size: 16px;
+    font-weight: 600;
     line-height: 1.187;
     letter-spacing: 0.04em;
 
@@ -191,7 +188,7 @@ header {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-/* features section styles */
+/* ============================== features section styles ============================== */
 
 .features {
     padding-top: 120px;
@@ -215,7 +212,6 @@ header {
     align-items: flex-start;
     padding: 0px;
     gap: 8px;
-    
 }
 
 .features-image {
@@ -252,7 +248,7 @@ header {
     letter-spacing: 0.02em; 
 }
 
-/* products section styles */
+/* ============================== products section styles ============================== */
 
 .products {
     padding-bottom: 120px;
@@ -280,21 +276,11 @@ header {
     padding: 0;
 }
 
-/* 
-Также можно сделать отступы как на макете по 24px между картинками cпомобом ниже:
-
-.products-list > li:not(:first-child) {
-    margin-left: 24px;
-}
-
-но тогда после последней картинки остается небольшой отступ
-*/
-
 .products-list img {
     display: block;
 }
 
-/* team section styles */
+/* ============================== team section styles ============================== */
 
 .team {
     background-color: #F4F4FD;
@@ -308,6 +294,7 @@ header {
     
     color: var(--main-title-color);
     font-size: 36px;
+    font-weight: 600;
     line-height: 1.11;
     letter-spacing: 0.02em;
 
@@ -328,6 +315,7 @@ header {
     
     color: var(--main-title-color);
     font-size: 20px;
+    font-weight: 600;
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
@@ -357,7 +345,7 @@ header {
     padding: 32px 16px;
 }
 
-/* Ссылки на социальные сети */
+/* ============================== Ссылки на социальные сети ============================== */
 
 .team-card-social-links {
     display: flex;
@@ -375,10 +363,10 @@ header {
 
 .team-card-link.social-link:hover,
 .team-card-link.social-link:focus {
-    background-color: #31D0AA;
+    background-color: var(--link-color-hover);
 }
 
-/* customers section styles */
+/* ============================== customers section styles ============================== */
 
 .customers {
     margin: 0;
@@ -432,7 +420,7 @@ header {
     color: var(--link-color);
 }
 
-/* footer styles */
+/* ============================== footer styles ============================== */
 
 .invitation {
     padding-top: 100px;
@@ -499,14 +487,14 @@ header {
 
 .social-link.footer-link:hover,
 .social-link.footer-link:focus {
-    background-color: #31D0AA;
+    background-color: var(--link-color-hover);
 }
 
 .footer-social-links-icon {
     margin: 0;
 }
 
-/* porfolio styles */
+/* ============================== porfolio styles ============================== */
 
 .portfolio {
     padding-top: 93px;
@@ -560,7 +548,7 @@ header {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 } 
 
-/* примеры работ в портфолио */
+/* ============================== примеры работ в портфолио ============================== */
 
 .works-list {
     padding: 0;
@@ -593,6 +581,7 @@ header {
     color: var(--main-title-color);
     
     font-size: 20px;
+    font-weight: 600;
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
